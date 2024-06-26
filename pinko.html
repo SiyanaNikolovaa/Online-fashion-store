@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinko</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Adding CSS-->
+    <link rel="stylesheet" href="styles-pinko.css" />
+    <!--Adding Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/524aba6c01.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" /></a>
+      <h1>Online store</h1>
+      <div class="categories">
+        <div class="categories-content">
+          <a href="#">Тениски</a>
+          <a href="#">Панталони</a>
+          <a href="#">Рокли</a>
+          <a href="#">Обувки</a>
+          <div class="accessories">
+            <a href="#">Аксесоари</a>
+            <div class="accessories-content">
+              <a href="#">Чанти</a>
+              <a href="#">Часовници</a>
+              <a href="#">Бижута</a>
+              <a href="#">Други акесоари</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <ul>
+        <a href="index.html">
+          <li><i class="fa-solid fa-house"></i>Начало</li>
+        </a>
+        <a href="#">
+          <li><i class="fa-solid fa-bars"></i>Категории</li>
+        </a>
+        <a href="#">
+          <li><i class="fa-solid fa-heart fa-beat"></i>Любими</li>
+        </a>
+        <a href="#">
+          <li><i class="fa-solid fa-cart-shopping"></i>Количка</li>
+        </a>
+        <a href="#">
+          <li><i class="fa-solid fa-info"></i>За нас</li>
+        </a>
+        <a href="#">
+          <li><i class="fa-solid fa-envelope"></i>Контакти</li>
+        </a>
+        <form class="search-form">
+          <i class="fa-brands fa-searchengin"></i>
+          <input
+            class="search-form-input"
+            type="text"
+            placeholder="Какво търсиш днес?"
+          />
+        </form>
+      </ul>
+    </div>
+
+    <div class="categories-container-bar">
+      <ul>
+        <a href="#">
+          <li>&#128087; Дрехи</li>
+        </a>
+        <a href="#">
+          <li>&#128096; Обувки</li>
+        </a>
+        <a href="#">
+          <li>&#128091; Чанти, часовници и аксесоари</li>
+        </a>
+        <a href="#">
+          <li>&#127952; Спортни</li>
+        </a>
+        <a href="#">
+          <li>&#11088; PREMIUM</li>
+        </a>
+        <a href="#">
+          <li>&#128151; Изберете българското</li>
+        </a>
+        <a href="#">
+          <li>&#10024; Пожелай си нещо</li>
+        </a>
+        <a href="#">
+          <li>&#128680; Намаления</li>
+        </a>
+      </ul>
+    </div>
+
+    <!--Brand Section-->
+    <!--Filter-->
+    <div class="row-filter">
+      <h3>ФИЛТРИ</h3>
+      <hr />
+    </div>
+    <div class="row-fil-cat">
+      <div class="col-filter">
+        <div class="filter-form">
+          <form action="/action-page.php">
+            <div class="filter-shoes">
+              <h4>Обувки</h4>
+              <input
+                type="checkbox"
+                name="category"
+                value="Класически обувки"
+              />
+              <label for="name" required="">Класически обувки</label>
+              <input type="checkbox" name="category" value="Сникърси" />
+              <label for="name" required="">Сникърси</label>
+              <input type="checkbox" name="category" value="Маратонки" />
+              <label for="name" required="">Маратонки</label>
+              <input type="checkbox" name="category" value="Мокасини" />
+              <label for="name" required="">Мокасини</label>
+              <input type="checkbox" name="category" value="Боти" />
+              <label for="name" required="">Боти</label>
+              <input type="checkbox" name="category" value="Ботуши" />
+              <label for="name" required="">Ботуши</label>
+              <input type="checkbox" name="category" value="Сандали" />
+              <label for="name" required="">Сандали</label>
+              <input
+                type="checkbox"
+                name="category"
+                value="Домашни пантофи и плажни чехли"
+              />
+              <label for="name" required=""
+                >Домашни пантофи и плажни чехли</label
+              >
+            </div>
+
+            <hr />
+            <div class="filter-section">
+              <h2>ЦЕНА</h2>
+              <div class="price-slider">
+                <input
+                  type="range"
+                  id="priceRange"
+                  min="0"
+                  max="1000"
+                  step="10"
+                />
+                <div class="price-values">
+                  <span id="minPrice">0</span> - <span id="maxPrice">1000</span>
+                </div>
+              </div>
+              <button type="button" class="apply-filters">Приложи</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-first">
+          <div class="products-pinko">
+            <a href="pinko-hibiskus.html"
+              ><img
+                src="images/pinko-dress.webp"
+                alt="pinko hibiskus dress"
+                class="image"
+            /></a>
+          </div>
+          <div class="products-pinko">
+            <img src="images/white.webp" />
+          </div>
+          <div class="products-pinko">
+            <img src="images/Pinko_Dress_8057769376275_1.jpg" alt="black" />
+          </div>
+        </div>
+        <div class="col-second">
+          <div class="products-pinko">
+            <img src="images/maxi.jpeg" />
+          </div>
+          <div class="products-pinko">
+            <img src="images/flower.jpg" />
+          </div>
+          <div class="products-pinko">
+            <img src="images/blue.jpg" alt="black" />
+          </div>
+        </div>
+        <div class="col-third">
+          <div class="products-pinko">
+            <img src="images/logo-pinko.jpg" />
+          </div>
+          <div class="products-pinko">
+            <img src="images/gr.jpeg" />
+          </div>
+          <div class="products-pinko">
+            <img src="images/casalfermo.webp" alt="black" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--PRODUCTS SECTION-->
+    <!--FOOTER-->
+    <hr />
+    <footer>
+      <img src="images/footer.jpg" />
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <h4>Бъдете част от нашата Общност!</h4>
+            <div class="social-media">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="col-3">
+            <h4>Адресът ни</h4>
+            <p>Делта Мол</p>
+            <p>Булевард "Цар Освободител"</p>
+            <p>Варна</p>
+            <p>България</p>
+          </div>
+          <div class="col">
+            <div class="form-newsletter">
+              <h4>Имате въпрос?</h4>
+              <form action="/action_page.php">
+                <label for="name">Вашето име</label><br />
+                <input type="text" placeholder="Вашето име" required="" /><br />
+                <label for="email">Вашият имейл</label><br />
+                <input type="email" placeholder="Имейл" required="" />
+                <label for="text">Вашето запитване</label>
+                <textarea
+                  id="text-area"
+                  rows="4"
+                  cols="50"
+                  required=""
+                ></textarea>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="price-pinko.js"></script>
+</html>

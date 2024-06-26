@@ -1,0 +1,203 @@
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  color: black;
+  z-index: 10;
+}
+/*Logo*/
+
+.logo h1 {
+  margin-top: -180px;
+  margin-left: 20px;
+}
+
+.logo img {
+  width: 200px;
+  height: 188px;
+  margin-top: 38px;
+  margin-left: 14px;
+}
+
+.logo img {
+  transition: transform 2s ease-in-out;
+}
+.logo img:hover {
+  transform: scale(1.5);
+}
+
+.categories-content {
+  display: none;
+  position: absolute;
+  background-color: pink;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.categories-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: 3px solid rgb(134, 79, 201);
+}
+
+.logo:hover .categories-content {
+  display: block;
+  visibility: visible;
+  transition: 2s step-start;
+}
+
+.categories-content a:hover {
+  display: block;
+  color: rgb(rgb(134, 79, 201));
+}
+
+.accessories:hover .accessories-content {
+  display: block;
+}
+
+hr {
+  margin-top: 40px;
+}
+
+/* Navigation bar */
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 19px;
+  padding: 30px;
+  color: #bd2e75;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 15px;
+  color: #ff00c8;
+}
+
+.navbar i {
+  padding-right: 5px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.fa-classic,
+.fa-regular,
+.fa-solid,
+.far,
+.fas {
+  font-family: "Font Awesome 6 Free";
+  display: right;
+}
+
+.search-form-input {
+  padding: 5px;
+  border: 2px solid rgb(237, 142, 198);
+  border-radius: 5px;
+  outline: none;
+}
+
+/* CATEGORIES BAR */
+
+.categories-container-bar {
+  margin-top: 30px;
+  background-color: pink;
+}
+
+.categories-container-bar ul {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.categories-container-bar li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.categories-container-bar a:link,
+a:visited {
+  text-decoration: none;
+  color: #bd2e75;
+}
+
+.categories-container-bar a:hover {
+  background-color: #d571a3;
+  transform: scale(1.5);
+  transition: transform 2s ease-in-out;
+}
+
+.categories-content a:hover {
+  background-color: #ff00c8;
+}
+
+/*Dress Section*/
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+}
+
+.col-1 img {
+  width: 100%;
+  height: 563.188px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.col-2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.dress-description span {
+  font-weight: bold;
+}
+
+.dress-description button {
+  cursor: pointer;
+  background-color: #d571a3;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 10px 24px;
+}
+
+.dress-description button:hover {
+  transform: scale(1.5);
+  transition: 1.5s;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #d571a3;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 10px 24px;
+}
+
+.btn:hover {
+  transform: scale(1.5);
+  transition: 1.5s;
+}

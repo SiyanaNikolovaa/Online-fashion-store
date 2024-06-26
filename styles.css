@@ -1,0 +1,738 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    color: black;
+    z-index: 10;
+}
+
+/*Logo*/
+
+.logo h1{
+   margin-top: -180px;
+   margin-left: 20px;
+}
+
+.logo img{
+    width:200px;
+    height:188px;
+    margin-top: 38px;
+    margin-left: 14px;
+}
+
+
+.logo img {
+    transition: transform 2s ease-in-out;
+  }
+  .logo img:hover {
+    transform: scale(1.5);
+  }
+
+.categories-content{
+    display:none;
+    position:absolute;
+    background-color: pink;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    visibility: hidden;
+}
+
+.categories-content a{
+    color:white;
+    padding:12px 16px;
+    text-decoration: none;
+    display:block;
+    border: 3px solid rgb(134, 79, 201)
+}
+
+
+.logo:hover .categories-content {
+    display:block;
+    visibility: visible;
+    transition: 2s step-start;
+}
+
+.categories-content a:hover {
+    display:block;
+    color:rgb(rgb(134, 79, 201))
+}
+
+.accessories:hover .accessories-content{
+    display:block;
+}
+
+hr{
+    margin-top:40px;
+}
+
+/* Navigation bar */
+
+.navbar ul{
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 19px;
+    padding: 30px;
+    color:#bd2e75
+}
+
+.navbar li{
+    list-style-type: none;
+    padding:15px;
+    color:#ff00c8
+}
+
+.navbar i{
+    padding-right:5px;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.fa-classic, .fa-regular, .fa-solid, .far, .fas {
+    font-family: "Font Awesome 6 Free";
+    display:right;
+}
+
+
+.search-form-input{
+    padding:5px;
+    border:2px solid rgb(237, 142, 198);
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+/* CATEGORIES BAR */
+
+.categories-container-bar{
+    margin-top:30px;
+    background-color: pink;
+}
+
+.categories-container-bar ul{
+    display: flex;
+    justify-content: center;
+    font-size:20px;
+    padding:2px;
+}
+
+.categories-container-bar li{
+    list-style-type:none;
+    padding:10px;
+}
+
+.categories-container-bar a:link,a:visited{
+    text-decoration: none;
+    color:#bd2e75;
+}
+
+.categories-container-bar a:hover{
+    background-color: #d571a3;
+    transform: scale(1.5);
+    transition: transform 2s ease-in-out;
+  }
+
+  .categories-content a:hover{
+    background-color: #ff00c8;
+  }
+
+
+/* Marketing */
+
+.advertise h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 70px;
+}
+
+span.adv-span{
+    color:rgb(218, 137, 38);
+}
+
+.advertise p{
+    font-size: 23px;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+/* Carousel */
+
+.carousel {
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+    display: none; /* hide all slide images not currently being viewed */
+}
+
+.carousel .carousel-item-visible {
+    display: block; /* show current slide image */
+    animation: fadeVisibility 0.5s; /* for fading effect when switching between slides */
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Navigation control styles */
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* put space between the navigation buttons */
+    position: absolute; /* position navigation buttons on top */
+    top: 50%; /* center navigation buttons on the slide */
+    transform: translateY(-50%); /* align navigation buttons */
+}
+
+.carousel .carousel-actions button {
+    border-radius: 50px;
+    background-color: white;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 20px; /* prevent previous button from touching the side*/
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 20px;  /* prevent next button from touching the side*/
+}
+
+.carousel-dots {
+    text-align: center; 
+}
+
+.dot {
+    opacity: 0.7; /* gray out dots for slides not being visted */
+}
+
+.dot:focus {
+    border: 1px solid black; /* dot for currently visited slide */
+}
+
+/* hanlde smooth transitions between slides */
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Top Products */
+
+.top-products{
+    text-align:center;
+    margin-top:40px;
+    background-color: rgba(229, 165, 234, 0.952);  
+}
+
+.main-text {
+    position: relative; 
+}
+
+
+.advertise-winter-collection img{
+    position: relative;
+    border-radius:50%;
+    width:600px;
+    height:400px;
+}
+
+
+/* Scroll-text */
+
+#scroll-container {
+    overflow: hidden;
+  }
+  
+  #scroll-text {
+    font-size: large;
+    text-transform: uppercase;
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+
+  
+
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/* Products */
+
+ h1{
+    text-align:center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+.products{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products p{
+    text-align:center;
+    margin-top:20px;
+}
+
+.products img{
+    width:250px;
+    height: 250px;   
+    border-radius: 15px 50px 30px; 
+    padding: 40px;
+}
+
+.products img:hover{
+    width:250px;
+    height: 250px;   
+    border-radius:  25% 10%;; 
+    padding: 40px;
+    cursor:pointer;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.2);
+}
+
+/*Premium Brands*/
+
+h3{
+    text-align:center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.premium-brands-container h3{
+    display:flex;
+    justify-content: center;
+    font-size:1.5rem;
+    text-transform:uppercase;
+}
+
+.premium-brands-logos img{
+    display: flex;
+    justify-content: center;
+    width:250px;
+    height: 250px;   
+    border-radius:  25% 10%;
+    padding: 40px;
+}
+
+.premium-brands-logos:hover img{
+    width:250px;
+    height: 250px;   
+    border-radius:  25% 10%;; 
+    padding: 40px;
+    cursor:pointer;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.2);
+}
+
+.premium-brands-logos p{
+    text-transform: uppercase;
+    margin:0 0 0 8.5rem;
+}
+
+.premium-brands-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FOOTER*/
+
+footer{
+    width:100%;
+    position: absolute;
+    margin-top:10px;
+    color: rgba(229, 165, 234, 0.952);
+    border-top-left-radius: 130px;
+    font-size:25px;
+    line-height: 20px;
+}
+
+footer img{
+    width:200px;
+    height:300px;
+    margin-top: 10px;
+    margin-left: 14px; 
+}
+
+footer p{
+    font-size: 4px;
+}
+
+.row{
+    width: 85%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.col{
+    flex-basis:20px;
+    text-transform: uppercase;
+    padding:40px;
+    text-align: center;
+}
+
+
+.form-newsletter{
+    background-color: whitesmoke;
+    border: 4px solid pink;
+    border-radius: 10px 100px / 120px;
+    padding:2rem;
+    text-align: center;
+    /*margin-left:7rem;*/
+    margin-top: -21.5rem;
+    /*margin-right:-4.5rem;*/
+    display:flex;
+    justify-content: right;
+}
+
+.form-newsletter h4{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+label{
+    color:rgba(201, 24, 151, 0.952);
+    font-size:18px;
+    transform: translate(-50%, -50%);
+    background: rgba(214, 15, 178, 0.5);
+    box-sizing: border-box;
+    border-radius:9px;
+    text-align: center;
+}
+
+input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #8b758d;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #730445;
+  outline: none;
+  background: pink;
+  text-align: center;
+  cursor: pointer;
+}
+
+#text-area{
+    background: pink; 
+    text-align: center;
+}
+
+.col-3 {
+    text-transform: uppercase;
+    padding:40px;
+    text-align: center;
+    border: 4px solid pink;
+    border-radius: 10px 100px / 120px;
+    margin-top:-19rem;
+    margin-left:17.5rem;
+    background-color: whitesmoke;
+    padding:2.7rem;
+}
+
+.col-3 p{
+    font-size:16px;
+}
+
+.col-1 h4{
+    text-align: center;
+}
+
+
+.col-1{
+    text-transform: uppercase;
+    padding:40px;
+    text-align: center;
+    border: 4px solid pink;
+    border-radius: 10px 100px / 120px;
+    margin-top:-19rem;
+    margin-left:10rem;
+    margin-right:-10rem;
+    background-color: whitesmoke;
+    padding:4rem;
+}
+
+.fa-brands {
+    padding:2px;
+}
+
+.fa-brands:hover {
+    opacity: 0.7;
+    cursor:pointer;
+  }
+
+
+/* SNOW EFFECT */
+
+
+
+.top-products .snow-ball-container .snow-ball { 
+    position: absolute; 
+    height: 10px; 
+    width: 10px; 
+    border-radius: 50%; 
+    background: white; 
+  
+} 
+  
+.snow-ball-container .snow-ball:nth-child(even) { 
+    position: absolute; 
+    width: 16px; 
+    height: 16px; 
+    animation: flake-motion 15s linear infinite; 
+} 
+  
+/* Position the Snowballs above the screen */
+  
+.snow-ball-container .snow-ball:nth-child(1) { 
+    top: -50%; 
+    left: 5%; 
+    width: 20px; 
+    height: 20px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(2) { 
+    top: -20%; 
+    left: 10%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(3) { 
+    top: -50%; 
+    left: 15%; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(4) { 
+    top: -10%; 
+    left: 20%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(5) { 
+    top: -20%; 
+    left: 25%; 
+    width: 20px; 
+    height: 20px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(6) { 
+    top: -40%; 
+    left: 30%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(7) { 
+    top: -30%; 
+    left: 35%; 
+    width: 5px; 
+    height: 5px; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(8) { 
+    top: -20%; 
+    left: 40%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(9) { 
+    top: -50%; 
+    left: 45%; 
+    width: 5px; 
+    height: 5px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(10) { 
+    top: -5%; 
+    left: 50%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(11) { 
+    top: -20%; 
+    left: 60%; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(12) { 
+    top: -10%; 
+    left: 70%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(13) { 
+    top: -50%; 
+    left: 80%; 
+    width: 5px; 
+    height: 5px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(14) { 
+    top: -20%; 
+    left: 90%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(15) { 
+    top: -50%; 
+    left: 95%; 
+    width: 30px; 
+    height: 30px; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+/* Define animations of Snowball and Snowflakes */
+  
+@keyframes snowball-animation { 
+    0% { 
+        transform: translate(0); 
+        opacity: 1; 
+    } 
+  
+    20% { 
+        transform: translate(4px, 100px); 
+        opacity: 0.8; 
+    } 
+  
+    40% { 
+        transform: translate(-7px, 200px); 
+        opacity: 0.7; 
+    } 
+  
+    60% { 
+        transform: translate(10px, 400px); 
+        opacity: 0.5; 
+    } 
+  
+    80% { 
+        transform: translate(-14px, 700px); 
+        opacity: 0.2; 
+    } 
+  
+    100% { 
+        transform: translate(16px, 900px); 
+        opacity: 0; 
+    } 
+} 
+  
+@keyframes flake-motion { 
+    0% { 
+        transform: translate(-2px, 0); 
+        opacity: 1; 
+    } 
+  
+    20% { 
+        transform: translate(-9px, 200px); 
+        opacity: 0.9; 
+    } 
+  
+    40% { 
+        transform: translate(14px, 300px); 
+        opacity: 0.7; 
+    } 
+  
+    60% { 
+        transform: translate(-22px, 400px); 
+        opacity: 0.6; 
+    } 
+  
+    80% { 
+        transform: translate(30px, 600px); 
+        opacity: 0.5; 
+    } 
+  
+    90% { 
+        transform: translate(-40px 800px); 
+        opacity: 0.3; 
+    } 
+  
+    100% { 
+        transform: translate(52px, 1000px); 
+        opacity: 0; 
+    } }
+
+    @keyframes my-animation {
+        from {
+          -moz-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+        }
+        to {
+          -moz-transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);}

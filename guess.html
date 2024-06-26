@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess</title>
+    <link rel="stylesheet" href="styles-guess.css">
+      <!--Adding Google Font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+      <!--Font Awesome-->
+      <script src="https://kit.fontawesome.com/524aba6c01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="images/logo.png">
+        <h1>Online store</h1>
+        <div class="categories">
+            <div class="categories-content">
+                <a href="#">Тениски</a>
+                <a href="#">Панталони</a>
+                <a href="#">Рокли</a>
+                <a href="#">Обувки</a>
+                <div class="accessories">
+                    <a href="#">Аксесоари</a>
+                    <div class="accessories-content">
+                        <a href="#">Чанти</a>
+                        <a href="#">Часовници</a>
+                        <a href="#">Бижута</a>
+                        <a href="#">Други акесоари</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <ul>
+            <a href="#">
+                <li><i class="fa-solid fa-house"></i>Начало</li>
+            </a>
+            <a href="#">
+                <li><i class="fa-solid fa-bars"></i>Категории</li>
+                
+            </a>
+            <a href="#">
+                <li> <i class="fa-solid fa-heart fa-beat"></i>Любими</li>
+            </a>
+            <a href="#">
+                <li> <i class="fa-solid fa-cart-shopping"></i>Количка</li>
+            </a>
+            <a href="#">
+                <li> <i class="fa-solid fa-info"></i>За нас</li>
+            </a>
+            <a href="#">
+                <li> <i class="fa-solid fa-envelope"></i>Контакти</li>
+            </a>
+            <form class="search-form">
+                <i class="fa-brands fa-searchengin"></i>
+                <input class="search-form-input" type="text" placeholder="Какво търсиш днес?">
+            </form>
+        </ul>
+    </div>
+
+
+    <div class="categories-container-bar">
+        <ul>
+            <a href="#">
+                <li> &#128087; Дрехи</li>
+            </a>
+            <a href="#">
+                <li> &#128096; Обувки </li>
+            </a>
+            <a href="#">
+                <li> &#128091; Чанти, часовници и аксесоари </li>
+            </a>
+            <a href="#">
+                <li> &#127952; Спортни </li>
+            </a>
+            <a href="#">
+                <li> &#11088; PREMIUM </li>
+            </a>
+            <a href="#">
+                <li> &#128151; Изберете българското </li>
+            </a>
+            <a href="#">
+                <li> &#10024; Пожелай си нещо</li>
+            </a>
+            <a href="#">
+                <li> &#128680; Намаления </li>
+            </a>
+
+        </ul>
+    </div>
+
+    <!--Filter Section-->
+
+    <section class="filter">
+        <div class=row-1>
+            <h4>ФИЛТРИ</h4>
+            <div class="col-1">
+                <div class="filter-section">
+                    <h3>Филтрирай по:</h3>
+                    <div class="filter-category">
+                        <h3>Category</h3>
+                        <label><input type="checkbox" name="category" value="tops"> Tops</label>
+                        <label><input type="checkbox" name="category" value="bottoms"> Bottoms</label>
+                        <label><input type="checkbox" name="category" value="dresses"> Dresses</label>
+                        <label><input type="checkbox" name="category" value="outerwear"> Outerwear</label>
+                    </div>
+                    <hr>
+                    <div class="filter-size">
+                    <label><input type="checkbox" name="size" value="xs"> XS</label>
+                    <label><input type="checkbox" name="size" value="s"> S</label>
+                    <label><input type="checkbox" name="size" value="m"> M</label>
+                    <label><input type="checkbox" name="size" value="l"> L</label>
+                    <label><input type="checkbox" name="size" value="xl"> XL</label>
+                </div>
+                <hr>
+                <div class="filter-color">
+                    <label><input type="checkbox" name="color" value="red"> Red</label>
+                    <label><input type="checkbox" name="color" value="blue"> Blue</label>
+                    <label><input type="checkbox" name="color" value="green"> Green</label>
+                    <label><input type="checkbox" name="color" value="black"> Black</label>
+                    <label><input type="checkbox" name="color" value="white"> White</label>
+                    <span class="checkmark"></span>
+                </div>
+                <hr>
+                <div class="slider-container">
+                    <label for="priceSlider" class="slider-label">Price Range: $<span id="priceValue">0</span></label>
+                    <input type="range" id="priceSlider" min="0" max="4500" value="0" step="50">
+                </div>
+                <button type="button" class="apply-filters">Apply Filters</button>
+                
+            </div>
+            <hr>
+        </div>
+    </section>
+
+
+
+<script src="price-slider-guess.js"></script>
+</body>
+</html>
